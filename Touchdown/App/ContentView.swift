@@ -14,7 +14,7 @@ struct ContentView: View {
     //MARK: - BODY
     var body: some View {
         ZStack {
-            VStack {
+            VStack(spacing: 0) {
                 NavigationBarView()
                     .padding(.horizontal, 15)
                     .padding(.bottom)
@@ -23,10 +23,17 @@ struct ContentView: View {
                     .background(Color.white)
                     .shadow(color: Color.black.opacity(0.05), radius: 5, x: 0, y: 0)
                 
-                Spacer()
+                ScrollView(.vertical, showsIndicators: false, content:  {
+                    VStack(spacing: 0) {
+                        FeaturedTabView()
+                            .frame(height: UIScreen.main.bounds.width / 1.475)
+                            .padding(.vertical, 10)
+                        
+                        FooterView()
+                            .padding(.horizontal)
+                    }//: VSTACK
+                })//: SCROLL
                 
-                FooterView()
-                    .padding(.horizontal)
             }//:VSTACK
             .background(colorBackground.ignoresSafeArea(.all, edges: .all))
         }//: ZSTACK
