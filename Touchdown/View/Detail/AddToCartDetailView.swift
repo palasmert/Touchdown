@@ -13,7 +13,7 @@ struct AddToCartDetailView: View {
     //MARK: - BODY
 
     var body: some View {
-        Button(action: { }, label: {
+        Button(action: {}, label: {
             Spacer()
             Text("Add to cart".uppercased())
                 .font(.system(.title2, design: .rounded))

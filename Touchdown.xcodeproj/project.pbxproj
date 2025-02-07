@@ -107,6 +107,9 @@
 			);
 			mainGroup = 615946132D36818500D77F9D;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				61AAF6D02D542BE3000BAB6A /* XCRemoteSwiftPackageReference "XcodeTheme" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 6159461D2D36818500D77F9D /* Products */;
 			projectDirPath = "";
@@ -337,6 +340,17 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		61AAF6D02D542BE3000BAB6A /* XCRemoteSwiftPackageReference "XcodeTheme" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ddh4r4m/XcodeTheme.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
 	};
 	rootObject = 615946142D36818500D77F9D /* Project object */;
 }
